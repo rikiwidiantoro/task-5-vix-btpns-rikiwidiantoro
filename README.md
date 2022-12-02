@@ -1,9 +1,9 @@
 # task-5-vix-btpns-rikiwidiantoro
-task akhir VIX Full Stack Developer di BTPN Syariah
+task akhir VIX Full Stack Developer di BTPN Syariah batch November 2022
 
 ## Deskripsi
 
-Berdasarkan data yang telah diolah oleh tim Data Analysts, bahwa untuk meningkatkan engagement user pada aplikasi m-banking adalah meningkatkan aspek memiliki user pada aplikasi tersebut. Saran yang diberikan oleh tim data analysts adalah membentuk fitur personalize user, salah satunya adalah memungkinkan user dapat mengupload gambar untuk dijadikan foto profilnya. Tim developer bertanggung jawab untuk mengembangkan fitur ini, dan kalian diberikan tugas untuk merancang API pada fitur upload, dan menghapus gambar. Beberapa ketentuannya antara lain :
+Berdasarkan data yang telah diolah oleh tim Data Analysts, bahwa untuk meningkatkan engagement user pada aplikasi m-banking adalah meningkatkan aspek memiliki user pada aplikasi tersebut. Saran yang diberikan oleh tim data analysts adalah membentuk fitur personalize user, salah satunya adalah memungkinkan user dapat mengupload gambar untuk dijadikan foto profilnya. Tim developer bertanggung jawab untuk mengembangkan fitur ini, dan kalian diberikan tugas untuk merancang API pada fitur upload, dan menghapus gambar.
 
 
 ### Buatlah API menggunakan bahasa GoLang yang sesuai dengan ketentuan dan kebutuhan diatas!
@@ -46,9 +46,32 @@ Photos Endpoint
 B. Tools :
 Tools yang dapat kalian gunakan :
 
-● Gin Gonic Framework : https://github.com/gin-gonic/gin
-● Gorm : https://gorm.io/index.html
-● JWT Go : https://github.com/dgrijalva/jwt-go
-● Go Validator : http://github.com/asaskevich/govalidator
+- Gin Gonic Framework : https://github.com/gin-gonic/gin
+- Gorm : https://gorm.io/index.html
+- JWT Go : https://github.com/dgrijalva/jwt-go
+- Go Validator : http://github.com/asaskevich/govalidator
 
 Untuk database, gunakanlah server SQL open source seperti MySQL, PostgreSQL, atau Microsoft SQL Server.
+
+
+## Hasil
+
+### Fitur yang belum selesai :
+1. Fitur User & Authentication
+2. karena tidak menggunakan user maka field UserID dan Relasi model user tidak digunakan pada endpoint POST photo
+3. semua code di jalankan pada satu file yaitu main.go
+
+### Dependensi yang digunakan :
+1. Gorilla mux: For creating routes and HTTP handlers. link : go get github.com/gorilla/mux
+2. gorm: An ORM tool for MySQL. link : go get github.com/jinzhu/gorm
+3. mysql: The MySQL driver. link : go get github.com/go-sql-driver/mysql
+
+### Tools yang digunakan :
+- XAMPP
+- Visual Studio Code
+- Postman
+
+### Referensi Belajar
+- https://www.youtube.com/watch?v=gmP50RUd6YA
+- https://levelup.gitconnected.com/build-a-rest-api-using-go-mysql-gorm-and-mux-a02e9a2865ee
+
