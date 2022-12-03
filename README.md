@@ -11,7 +11,7 @@ Pada task akhir VIX Full Stack Developer ini kalian diarahkan untuk membentuk AP
 A. Ketentuan API :
 
 Pada bagian User Endpoint :
-  1. POST : /users/register, dan gunakan atribut berikut ini
+  1. POST : /users/register, dan gunakan atribut berikut ini :
       - ID (primary key, required)
       - Username (required)
       - Email (unique & required)
@@ -26,12 +26,12 @@ Pada bagian User Endpoint :
 
 Photos Endpoint :
   1. POST : /photos
-    - ID
-    - Title
-    - Caption
-    - PhotoUrl
-    - UserID
-    - Relasi dengan model User
+      - ID
+      - Title
+      - Caption
+      - PhotoUrl
+      - UserID
+      - Relasi dengan model User
   2. GET : /photos
   3. PUT : /photoId
   4. DELETE : /:photoId
@@ -47,7 +47,7 @@ Untuk database, gunakanlah server SQL open source seperti MySQL, PostgreSQL, ata
 
 
 ## Hasil
-Dapat membuat Restfull API untuk photo menggunakan bahasa GoLang, yaitu dapat menambah(POST), mengambil(GET) single maupun all photo, mengubah(PUT) dan menghapus(DELETE) photo sesuai Endpoint yang ada di requirement diatas.
+Dapat membuat Restfull API untuk photo menggunakan bahasa GoLang, yaitu dapat menambah (POST), mengambil (GET) single maupun all photo, mengubah (PUT) dan menghapus (DELETE) photo sesuai Endpoint yang ada di requirement diatas.
 
 ### Fitur yang belum selesai :
 1. Fitur User & Authentication
