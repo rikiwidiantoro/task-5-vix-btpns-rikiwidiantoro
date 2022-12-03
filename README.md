@@ -11,34 +11,30 @@ Pada task akhir VIX Full Stack Developer ini kalian diarahkan untuk membentuk AP
 A. Ketentuan API :
 
 Pada bagian User Endpoint :
+  1. POST : /users/register, dan gunakan atribut berikut ini
+      - ID (primary key, required)
+      - Username (required)
+      - Email (unique & required)
+      - Password (required & minlength 6)
+      - Relasi dengan model Photo (Gunakan constraint cascade)
+      - Created At (timestamp)
+      - Updated At (timestamp)
+  2. GET: /users/login
+      - Using email & password (required)
+  3. PUT : /users/:userId (Update User)
+  4. DELETE : /users/:userId (Delete User)
 
-1. POST : /users/register, dan gunakan atribut berikut ini
-  - ID (primary key, required)
-  - Username (required)
-  - Email (unique & required)
-  - Password (required & minlength 6)
-  - Relasi dengan model Photo (Gunakan constraint cascade)
-  - Created At (timestamp)
-  - Updated At (timestamp)
-
-2. GET: /users/login
-  - Using email & password (required)
-
-3. PUT : /users/:userId (Update User)
-4. DELETE : /users/:userId (Delete User)
-
-Photos Endpoint
-1. POST : /photos
-  - ID
-  - Title
-  - Caption
-  - PhotoUrl
-  - UserID
-  - Relasi dengan model User
-
-2. GET : /photos
-3. PUT : /photoId
-4. DELETE : /:photoId
+Photos Endpoint :
+  1. POST : /photos
+    - ID
+    - Title
+    - Caption
+    - PhotoUrl
+    - UserID
+    - Relasi dengan model User
+  2. GET : /photos
+  3. PUT : /photoId
+  4. DELETE : /:photoId
 
 
 B. Tools yang dapat kalian gunakan :
@@ -56,7 +52,7 @@ Dapat membuat Restfull API untuk photo menggunakan bahasa GoLang, yaitu dapat me
 ### Fitur yang belum selesai :
 1. Fitur User & Authentication
 2. karena tidak menggunakan user maka field UserID dan Relasi model user tidak digunakan pada endpoint POST photo
-3. semua code di jalankan pada satu file yaitu main.go
+3. semua code di jalankan pada satu file yaitu main.go dan tidak menggunakan struktur folder pada requirement karena hanya dapat membuat Restfull API untuk photo saja.
 
 ### Dependensi yang digunakan :
 1. Gorilla mux: For creating routes and HTTP handlers. link : go get github.com/gorilla/mux
